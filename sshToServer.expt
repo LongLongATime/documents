@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+
+#安装expect: apt-get install expect
+spawn ssh user@ip
+expect "*assword:*"
+send "xxx\r"
+interact
